@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41543C8A7D893B564B9AD4FC /* Pods_ApiSearchItunesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD796AA5E1F86DA31B9FF6D /* Pods_ApiSearchItunesUITests.framework */; };
 		445434C0224D41D10008CE08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445434BF224D41D10008CE08 /* AppDelegate.swift */; };
 		445434C2224D41D10008CE08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445434C1224D41D10008CE08 /* ViewController.swift */; };
 		445434C5224D41D10008CE08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445434C3224D41D10008CE08 /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		445434CA224D41D20008CE08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445434C8224D41D20008CE08 /* LaunchScreen.storyboard */; };
 		445434D5224D41D20008CE08 /* ApiSearchItunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445434D4224D41D20008CE08 /* ApiSearchItunesTests.swift */; };
 		445434E0224D41D20008CE08 /* ApiSearchItunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445434DF224D41D20008CE08 /* ApiSearchItunesUITests.swift */; };
+		445434EE224D42E60008CE08 /* AlbumClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445434ED224D42E60008CE08 /* AlbumClass.swift */; };
+		445434F0224D44360008CE08 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445434EF224D44360008CE08 /* CustomCell.swift */; };
+		990F30D854847A399532980B /* Pods_ApiSearchItunesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD327D42295F2EA7D000CD40 /* Pods_ApiSearchItunesTests.framework */; };
+		A1484B11F78BD6835932981A /* Pods_ApiSearchItunes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26BCA57E250E559F37C09134 /* Pods_ApiSearchItunes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26BCA57E250E559F37C09134 /* Pods_ApiSearchItunes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiSearchItunes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		358BC9873086FF69A661E3CB /* Pods-ApiSearchItunesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSearchItunesUITests.release.xcconfig"; path = "Target Support Files/Pods-ApiSearchItunesUITests/Pods-ApiSearchItunesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		445434BC224D41D10008CE08 /* ApiSearchItunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiSearchItunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		445434BF224D41D10008CE08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		445434C1224D41D10008CE08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,15 @@
 		445434DB224D41D20008CE08 /* ApiSearchItunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApiSearchItunesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		445434DF224D41D20008CE08 /* ApiSearchItunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSearchItunesUITests.swift; sourceTree = "<group>"; };
 		445434E1224D41D20008CE08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445434ED224D42E60008CE08 /* AlbumClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumClass.swift; sourceTree = "<group>"; };
+		445434EF224D44360008CE08 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		6AAFABADAFC415BECEE9E051 /* Pods-ApiSearchItunesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSearchItunesUITests.debug.xcconfig"; path = "Target Support Files/Pods-ApiSearchItunesUITests/Pods-ApiSearchItunesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C466FCC76D7A5DBA3AA2F0D /* Pods-ApiSearchItunesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSearchItunesTests.release.xcconfig"; path = "Target Support Files/Pods-ApiSearchItunesTests/Pods-ApiSearchItunesTests.release.xcconfig"; sourceTree = "<group>"; };
+		96AE08F0B02DC61BC8C9C528 /* Pods-ApiSearchItunes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSearchItunes.release.xcconfig"; path = "Target Support Files/Pods-ApiSearchItunes/Pods-ApiSearchItunes.release.xcconfig"; sourceTree = "<group>"; };
+		AD327D42295F2EA7D000CD40 /* Pods_ApiSearchItunesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiSearchItunesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD796AA5E1F86DA31B9FF6D /* Pods_ApiSearchItunesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiSearchItunesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2A7F2084A3379710DD728F9 /* Pods-ApiSearchItunesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSearchItunesTests.debug.xcconfig"; path = "Target Support Files/Pods-ApiSearchItunesTests/Pods-ApiSearchItunesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6D21E2760D94012AE3C640C /* Pods-ApiSearchItunes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSearchItunes.debug.xcconfig"; path = "Target Support Files/Pods-ApiSearchItunes/Pods-ApiSearchItunes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1484B11F78BD6835932981A /* Pods_ApiSearchItunes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				990F30D854847A399532980B /* Pods_ApiSearchItunesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41543C8A7D893B564B9AD4FC /* Pods_ApiSearchItunesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +100,8 @@
 				445434D3224D41D20008CE08 /* ApiSearchItunesTests */,
 				445434DE224D41D20008CE08 /* ApiSearchItunesUITests */,
 				445434BD224D41D10008CE08 /* Products */,
+				556D48E08EAC432D422D6106 /* Pods */,
+				AA7D6D2A4D852AB3B0262EB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +118,8 @@
 		445434BE224D41D10008CE08 /* ApiSearchItunes */ = {
 			isa = PBXGroup;
 			children = (
+				445434ED224D42E60008CE08 /* AlbumClass.swift */,
+				445434EF224D44360008CE08 /* CustomCell.swift */,
 				445434BF224D41D10008CE08 /* AppDelegate.swift */,
 				445434C1224D41D10008CE08 /* ViewController.swift */,
 				445434C3224D41D10008CE08 /* Main.storyboard */,
@@ -125,6 +148,29 @@
 			path = ApiSearchItunesUITests;
 			sourceTree = "<group>";
 		};
+		556D48E08EAC432D422D6106 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6D21E2760D94012AE3C640C /* Pods-ApiSearchItunes.debug.xcconfig */,
+				96AE08F0B02DC61BC8C9C528 /* Pods-ApiSearchItunes.release.xcconfig */,
+				B2A7F2084A3379710DD728F9 /* Pods-ApiSearchItunesTests.debug.xcconfig */,
+				8C466FCC76D7A5DBA3AA2F0D /* Pods-ApiSearchItunesTests.release.xcconfig */,
+				6AAFABADAFC415BECEE9E051 /* Pods-ApiSearchItunesUITests.debug.xcconfig */,
+				358BC9873086FF69A661E3CB /* Pods-ApiSearchItunesUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA7D6D2A4D852AB3B0262EB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26BCA57E250E559F37C09134 /* Pods_ApiSearchItunes.framework */,
+				AD327D42295F2EA7D000CD40 /* Pods_ApiSearchItunesTests.framework */,
+				ADD796AA5E1F86DA31B9FF6D /* Pods_ApiSearchItunesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 445434E4224D41D20008CE08 /* Build configuration list for PBXNativeTarget "ApiSearchItunes" */;
 			buildPhases = (
+				BD1732F882A350ACDC47E4A2 /* [CP] Check Pods Manifest.lock */,
 				445434B8224D41D10008CE08 /* Sources */,
 				445434B9224D41D10008CE08 /* Frameworks */,
 				445434BA224D41D10008CE08 /* Resources */,
+				3567ED05243AC71F18745679 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 445434E7224D41D20008CE08 /* Build configuration list for PBXNativeTarget "ApiSearchItunesTests" */;
 			buildPhases = (
+				998AFB2AB41366DD841966AA /* [CP] Check Pods Manifest.lock */,
 				445434CC224D41D20008CE08 /* Sources */,
 				445434CD224D41D20008CE08 /* Frameworks */,
 				445434CE224D41D20008CE08 /* Resources */,
@@ -167,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 445434EA224D41D20008CE08 /* Build configuration list for PBXNativeTarget "ApiSearchItunesUITests" */;
 			buildPhases = (
+				2A83DC6E0DB1F7831687937B /* [CP] Check Pods Manifest.lock */,
 				445434D7224D41D20008CE08 /* Sources */,
 				445434D8224D41D20008CE08 /* Frameworks */,
 				445434D9224D41D20008CE08 /* Resources */,
@@ -251,6 +301,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A83DC6E0DB1F7831687937B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApiSearchItunesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3567ED05243AC71F18745679 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApiSearchItunes/Pods-ApiSearchItunes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ApiSearchItunes/Pods-ApiSearchItunes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		998AFB2AB41366DD841966AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApiSearchItunesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD1732F882A350ACDC47E4A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApiSearchItunes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		445434B8224D41D10008CE08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +401,8 @@
 			files = (
 				445434C2224D41D10008CE08 /* ViewController.swift in Sources */,
 				445434C0224D41D10008CE08 /* AppDelegate.swift in Sources */,
+				445434F0224D44360008CE08 /* CustomCell.swift in Sources */,
+				445434EE224D42E60008CE08 /* AlbumClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +575,7 @@
 		};
 		445434E5224D41D20008CE08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6D21E2760D94012AE3C640C /* Pods-ApiSearchItunes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +594,7 @@
 		};
 		445434E6224D41D20008CE08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96AE08F0B02DC61BC8C9C528 /* Pods-ApiSearchItunes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +613,7 @@
 		};
 		445434E8224D41D20008CE08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2A7F2084A3379710DD728F9 /* Pods-ApiSearchItunesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +635,7 @@
 		};
 		445434E9224D41D20008CE08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C466FCC76D7A5DBA3AA2F0D /* Pods-ApiSearchItunesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +657,7 @@
 		};
 		445434EB224D41D20008CE08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AAFABADAFC415BECEE9E051 /* Pods-ApiSearchItunesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +678,7 @@
 		};
 		445434EC224D41D20008CE08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 358BC9873086FF69A661E3CB /* Pods-ApiSearchItunesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
