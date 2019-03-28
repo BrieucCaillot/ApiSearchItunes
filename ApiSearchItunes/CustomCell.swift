@@ -11,7 +11,7 @@ class CustomCell: UITableViewCell {
     
     @IBOutlet weak var albumImg: UIImageView!
     @IBOutlet weak var albumArtist: UILabel!
-    @IBOutlet weak var albumTrack: UILabel!
+    @IBOutlet weak var albumTrackname: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

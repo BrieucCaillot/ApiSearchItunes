@@ -35,8 +35,11 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         let album = albumList[indexPath.row]
         
-        customCell.albumImg.image = UIImage(named: album.albumImg)
-        customCell.albumTrack.text! = album.albumTrack
+        let imgUrl = URL(string: album.albumImg)
+        let dataImg = try? Data(contentsOf: imgUrl!)
+        
+        customCell.albumImg.image = UIImage(data : dataImg!)
+        customCell.albumTrackname.text! = album.albumTrack
         customCell.albumArtist.text! = album.albumArtist
         
         return customCell
