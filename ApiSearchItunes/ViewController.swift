@@ -9,9 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var emailInput: UITextField!
-    @IBOutlet weak var passwordInput: UITextField!
+    
+    @IBOutlet weak var emailInput: UITextField! {
+        didSet {
+            emailInput.tintColor = UIColor.lightGray
+            emailInput.setIcon(UIImage(named: "icon-user")!)
+        }
+    }
+    
+    @IBOutlet weak var passwordInput: UITextField! {
+        didSet {
+            passwordInput.tintColor = UIColor.lightGray
+            passwordInput.setIcon(UIImage(named: "icon-password")!)
+        }
+    }
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     
@@ -36,4 +47,17 @@ class ViewController: UIViewController {
     }
     */
 
+}
+
+extension UITextField {
+    func setIcon(_ image: UIImage) {
+        let iconView = UIImageView(frame:
+            CGRect(x: 10, y: 5, width: 20, height: 20))
+        iconView.image = image
+        let iconContainerView: UIView = UIView(frame:
+            CGRect(x: 20, y: 0, width: 30, height: 30))
+        iconContainerView.addSubview(iconView)
+        leftView = iconContainerView
+        leftViewMode = .always
+    }
 }

@@ -18,42 +18,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="elE-ii-2Og">
-                                <rect key="frame" x="25" y="194" width="364" height="60"/>
+                                <rect key="frame" x="25" y="194" width="364" height="75"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="79Q-S7-vXh">
-                                        <rect key="frame" x="0.0" y="0.0" width="364" height="60"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lPy-IY-XBi">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="75"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F08-Be-QAb" userLabel="Email">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gQ0-TG-bam" userLabel="Email">
                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="30"/>
-                                                <accessibility key="accessibilityConfiguration" label="Email"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DXY-wT-db4" userLabel="Password">
-                                                <rect key="frame" x="0.0" y="30" width="364" height="30"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="by3-4I-YId" userLabel="Password">
+                                                <rect key="frame" x="0.0" y="45" width="364" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="DXY-wT-db4" firstAttribute="top" secondItem="F08-Be-QAb" secondAttribute="bottom" constant="30" id="hB4-oD-WOA"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DcZ-or-Y0c">
-                                <rect key="frame" x="25" y="276" width="364" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DcZ-or-Y0c">
+                                <rect key="frame" x="25" y="291" width="364" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQc-as-ex8">
-                                        <rect key="frame" x="0.0" y="0.0" width="182" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="178" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Sign In"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cS-FH-LPp">
-                                        <rect key="frame" x="182" y="0.0" width="182" height="30"/>
+                                        <rect key="frame" x="186" y="0.0" width="178" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Sign Up"/>
@@ -63,19 +59,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="F08-Be-QAb" firstAttribute="top" secondItem="bia-qg-qd2" secondAttribute="top" id="G0J-2p-SH3"/>
                             <constraint firstItem="elE-ii-2Og" firstAttribute="leading" secondItem="bia-qg-qd2" secondAttribute="leading" constant="25" id="SQL-Jg-pIQ"/>
                             <constraint firstItem="bia-qg-qd2" firstAttribute="trailing" secondItem="DcZ-or-Y0c" secondAttribute="trailing" constant="25" id="UO5-tD-Maa"/>
+                            <constraint firstItem="elE-ii-2Og" firstAttribute="top" secondItem="bia-qg-qd2" secondAttribute="top" constant="150" id="hy7-vt-Usp"/>
                             <constraint firstItem="DcZ-or-Y0c" firstAttribute="top" secondItem="elE-ii-2Og" secondAttribute="bottom" constant="22" id="j2Z-Y5-bEe"/>
                             <constraint firstItem="bia-qg-qd2" firstAttribute="trailing" secondItem="elE-ii-2Og" secondAttribute="trailing" constant="25" id="mDN-c8-uSq"/>
                             <constraint firstItem="DcZ-or-Y0c" firstAttribute="leading" secondItem="bia-qg-qd2" secondAttribute="leading" constant="25" id="tbK-7U-Y6x"/>
-                            <constraint firstItem="elE-ii-2Og" firstAttribute="top" secondItem="bia-qg-qd2" secondAttribute="top" constant="150" id="wZl-EU-MzU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bia-qg-qd2"/>
                     </view>
                     <connections>
-                        <outlet property="emailInput" destination="F08-Be-QAb" id="GTm-5R-Q2N"/>
-                        <outlet property="passwordInput" destination="DXY-wT-db4" id="LoL-E4-QtE"/>
+                        <outlet property="emailInput" destination="gQ0-TG-bam" id="FYy-9C-72n"/>
+                        <outlet property="passwordInput" destination="by3-4I-YId" id="bMI-dc-4pE"/>
                         <outlet property="signInButton" destination="iQc-as-ex8" id="vfM-wk-5Nf"/>
                         <outlet property="signUpButton" destination="4cS-FH-LPp" id="2nV-wC-hI8"/>
                     </connections>

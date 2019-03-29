@@ -8,6 +8,8 @@ target 'ApiSearchItunes' do
   # Pods for ApiSearchItunes
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Alamofire', '~> 4.7'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 
   target 'ApiSearchItunesTests' do
     inherit! :search_paths

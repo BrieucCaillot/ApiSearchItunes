@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "815EF74E25B27200E97A0D985B5976A7"
+               BlueprintIdentifier = "6DEEF2A51D69F1EFBE813576C0390DFE"
                BuildableName = "Pods_ApiSearchItunes.framework"
                BlueprintName = "Pods-ApiSearchItunes"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "815EF74E25B27200E97A0D985B5976A7"
+            BlueprintIdentifier = "6DEEF2A51D69F1EFBE813576C0390DFE"
             BuildableName = "Pods_ApiSearchItunes.framework"
             BlueprintName = "Pods-ApiSearchItunes"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -124,11 +124,11 @@
 				445434EF224D44360008CE08 /* CustomCell.swift */,
 				445434BF224D41D10008CE08 /* AppDelegate.swift */,
 				445434C1224D41D10008CE08 /* SearchMusicViewController.swift */,
+				4481210F224E6EE900B80376 /* ViewController.swift */,
 				445434C3224D41D10008CE08 /* Main.storyboard */,
 				445434C6224D41D20008CE08 /* Assets.xcassets */,
 				445434C8224D41D20008CE08 /* LaunchScreen.storyboard */,
 				445434CB224D41D20008CE08 /* Info.plist */,
-				4481210F224E6EE900B80376 /* ViewController.swift */,
 			);
 			path = ApiSearchItunes;
 			sourceTree = "<group>";
@@ -337,14 +337,20 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ApiSearchItunes/Pods-ApiSearchItunes-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
