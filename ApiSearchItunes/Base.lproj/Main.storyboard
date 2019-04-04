@@ -33,7 +33,7 @@
                                                 <rect key="frame" x="0.0" y="45" width="364" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -47,12 +47,18 @@
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Sign In"/>
+                                        <connections>
+                                            <action selector="btnSignedInClicked:" destination="gJV-TS-Oc7" eventType="touchUpInside" id="qax-NL-ELO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cS-FH-LPp">
                                         <rect key="frame" x="186" y="0.0" width="178" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="btnSignUpClicked:" destination="gJV-TS-Oc7" eventType="touchUpInside" id="OpQ-B9-rho"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -73,6 +79,7 @@
                         <outlet property="passwordInput" destination="by3-4I-YId" id="bMI-dc-4pE"/>
                         <outlet property="signInButton" destination="iQc-as-ex8" id="vfM-wk-5Nf"/>
                         <outlet property="signUpButton" destination="4cS-FH-LPp" id="2nV-wC-hI8"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="musicViewController" id="Lei-9x-Kyy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3n3-BY-Et6" userLabel="First Responder" sceneMemberID="firstResponder"/>

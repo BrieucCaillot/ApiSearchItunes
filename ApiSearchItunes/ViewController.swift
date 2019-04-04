@@ -7,8 +7,17 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class ViewController: UIViewController {
+    
+    func showAlert(message:String)
+    {
+        let alert = UIAlertController(title: message, message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
+    }
     
     @IBOutlet weak var emailInput: UITextField! {
         didSet {
@@ -26,6 +35,55 @@ class ViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     
+    @IBAction func btnSignUpClicked(_ sender: Any) {
+        //for signup new user
+        if ((emailInput.text == "") || (passwordInput.text == "")) {
+            self.showAlert(message: "All fields are mandatory!")
+            return
+        } else {
+            Auth.auth().createUser(withEmail: self.emailInput.text!, password: passwordInput.text!) {
+                (authResult, error) in
+                // ...
+                if ((error == nil)) {
+                    self.showAlert(message: "Signup Successfully!")
+                } else {
+                    self.showAlert(message: "<#T##String#>")
+                }
+            }
+        }
+    }
+
+    @IBAction func btnSignedInClicked(_ sender: Any) {
+        
+        Auth.auth().signIn(withEmail: emailInput.text!, password: passwordInput.text!) { (user, error) in
+            // ...
+            if(error == nil )
+            {
+                if let user = user {
+                    _ = user.user.displayName
+                    let user_email = user.user.email
+                    print(user_email!)
+                }
+                self.performSegue(withIdentifier: "musicViewController", sender: self)
+      
+            }
+            else{
+                if let errorCode = AuthErrorCode(rawValue: error!._code) {
+                    switch errorCode {
+                    case.wrongPassword:
+                        self.showAlert(message: "You entered an invalid password please try again!")
+                        break
+                    case.userNotFound:
+                        self.showAlert(message: "User not found")
+                    default:
+                        self.showAlert(message: "Unexpected error \(errorCode.rawValue) please try again!")
+                        print("Creating user error \(error.debugDescription)!")
+                    }
+                }
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,17 +93,6 @@ class ViewController: UIViewController {
         self.signUpButton.layer.cornerRadius = 15;
         self.signUpButton.clipsToBounds = true;
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
