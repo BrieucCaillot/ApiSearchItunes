@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gJV-TS-Oc7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MIF-ny-pyk">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -93,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3n3-BY-Et6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1025" y="21"/>
+            <point key="canvasLocation" x="3800" y="21"/>
         </scene>
         <!--Music-->
         <scene sceneID="tne-QT-ifu">
@@ -193,61 +193,83 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3795.652173913044" y="20.758928571428569"/>
+            <point key="canvasLocation" x="6526.0869565217399" y="20.758928571428569"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="jo2-IB-dJN">
+        <scene sceneID="Ykb-jc-YqH">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ZUa-8R-Nej" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="MIF-ny-pyk" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xyW-fH-gMU">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JGd-f0-SgV">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ZSD-h3-g4B" kind="relationship" relationship="viewControllers" id="3Bq-AT-SGc"/>
-                        <segue destination="ngY-fW-WGn" kind="relationship" relationship="viewControllers" id="AgG-lq-iUY"/>
+                        <segue destination="uje-MB-xcp" kind="relationship" relationship="viewControllers" id="bqO-iA-xva"/>
+                        <segue destination="x6C-9m-YQC" kind="relationship" relationship="viewControllers" id="uA2-5X-gev"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yOo-11-v1Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Fa-XR-QBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1975.36231884058" y="20.758928571428569"/>
-        </scene>
-        <!--Favorites-->
-        <scene sceneID="Efd-bG-e0e">
-            <objects>
-                <viewController id="ngY-fW-WGn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="92P-Vk-fLa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="AR4-el-KsH"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Favorites" id="12G-5P-W5h"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q03-rH-SSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1975" y="759"/>
+            <point key="canvasLocation" x="4705.7971014492759" y="20.758928571428569"/>
         </scene>
         <!--Music-->
-        <scene sceneID="ieg-CY-QB8">
+        <scene sceneID="B0L-Gr-8GJ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZSD-h3-g4B" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Music" id="0BX-wN-eZQ"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uje-MB-xcp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Music" image="music-player" id="SIm-n1-MJ6"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8I8-fG-00W">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EiK-LO-cp8">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5lJ-Fa-iu5"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yAz-Zm-Jym"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QNw-ix-ra3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sax-3E-f7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2885.507246376812" y="20.758928571428569"/>
+            <point key="canvasLocation" x="5615.9420289855079" y="20.758928571428569"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="WFk-De-kfS">
+            <objects>
+                <viewController id="aqt-xM-bW7" customClass="FavoritesViewController" customModule="ApiSearchItunes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ax2-UB-BdZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Q6g-Fr-6oS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Favorites" id="QgV-Gg-jQL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QlE-0X-cJp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5615.9420289855079" y="732.58928571428567"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="Amp-Cs-rak">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x6C-9m-YQC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" image="starcompleted" id="XL2-su-B04"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JWF-Kj-xAC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aqt-xM-bW7" kind="relationship" relationship="rootViewController" id="1FF-qp-IiK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="77F-de-pH7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4705.7971014492759" y="732.58928571428567"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="music-player" width="32" height="32"/>
+        <image name="starcompleted" width="128" height="128"/>
+    </resources>
 </document>
