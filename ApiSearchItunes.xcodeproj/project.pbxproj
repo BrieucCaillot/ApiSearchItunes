@@ -17,10 +17,11 @@
 		445434E0224D41D20008CE08 /* ApiSearchItunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445434DF224D41D20008CE08 /* ApiSearchItunesUITests.swift */; };
 		445434EE224D42E60008CE08 /* AlbumClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445434ED224D42E60008CE08 /* AlbumClass.swift */; };
 		445434F0224D44360008CE08 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445434EF224D44360008CE08 /* CustomCell.swift */; };
-		44812110224E6EE900B80376 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481210F224E6EE900B80376 /* ViewController.swift */; };
+		44812110224E6EE900B80376 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481210F224E6EE900B80376 /* AuthViewController.swift */; };
 		4491C659225622ED006C338E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4491C658225622ED006C338E /* GoogleService-Info.plist */; };
 		4491C65A225622ED006C338E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4491C658225622ED006C338E /* GoogleService-Info.plist */; };
 		4491C65B225622ED006C338E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4491C658225622ED006C338E /* GoogleService-Info.plist */; };
+		44C216B3225F8ADA005CB744 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C216B2225F8ADA005CB744 /* FavoritesViewController.swift */; };
 		990F30D854847A399532980B /* Pods_ApiSearchItunesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD327D42295F2EA7D000CD40 /* Pods_ApiSearchItunesTests.framework */; };
 		A1484B11F78BD6835932981A /* Pods_ApiSearchItunes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26BCA57E250E559F37C09134 /* Pods_ApiSearchItunes.framework */; };
 /* End PBXBuildFile section */
@@ -60,8 +61,9 @@
 		445434E1224D41D20008CE08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		445434ED224D42E60008CE08 /* AlbumClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumClass.swift; sourceTree = "<group>"; };
 		445434EF224D44360008CE08 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		4481210F224E6EE900B80376 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4481210F224E6EE900B80376 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		4491C658225622ED006C338E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		44C216B2225F8ADA005CB744 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		6AAFABADAFC415BECEE9E051 /* Pods-ApiSearchItunesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSearchItunesUITests.debug.xcconfig"; path = "Target Support Files/Pods-ApiSearchItunesUITests/Pods-ApiSearchItunesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8C466FCC76D7A5DBA3AA2F0D /* Pods-ApiSearchItunesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSearchItunesTests.release.xcconfig"; path = "Target Support Files/Pods-ApiSearchItunesTests/Pods-ApiSearchItunesTests.release.xcconfig"; sourceTree = "<group>"; };
 		96AE08F0B02DC61BC8C9C528 /* Pods-ApiSearchItunes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiSearchItunes.release.xcconfig"; path = "Target Support Files/Pods-ApiSearchItunes/Pods-ApiSearchItunes.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,8 +129,9 @@
 				445434ED224D42E60008CE08 /* AlbumClass.swift */,
 				445434EF224D44360008CE08 /* CustomCell.swift */,
 				445434BF224D41D10008CE08 /* AppDelegate.swift */,
+				4481210F224E6EE900B80376 /* AuthViewController.swift */,
 				445434C1224D41D10008CE08 /* SearchMusicViewController.swift */,
-				4481210F224E6EE900B80376 /* ViewController.swift */,
+				44C216B2225F8ADA005CB744 /* FavoritesViewController.swift */,
 				445434C3224D41D10008CE08 /* Main.storyboard */,
 				445434C6224D41D20008CE08 /* Assets.xcassets */,
 				445434C8224D41D20008CE08 /* LaunchScreen.storyboard */,
@@ -416,10 +419,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44812110224E6EE900B80376 /* ViewController.swift in Sources */,
+				44812110224E6EE900B80376 /* AuthViewController.swift in Sources */,
 				445434C2224D41D10008CE08 /* SearchMusicViewController.swift in Sources */,
 				445434C0224D41D10008CE08 /* AppDelegate.swift in Sources */,
 				445434F0224D44360008CE08 /* CustomCell.swift in Sources */,
+				44C216B3225F8ADA005CB744 /* FavoritesViewController.swift in Sources */,
 				445434EE224D42E60008CE08 /* AlbumClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AuthViewController.swift
 //  ApiSearchItunes
 //
 //  Created by Brieuc Caillot on 29/03/2019.
@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class ViewController: UIViewController {
+class AuthViewController: UIViewController {
     
     func showAlert(message:String)
     {
@@ -64,7 +64,8 @@ class ViewController: UIViewController {
                     let user_email = user.user.email
                     print(user_email!)
                 }
-                self.performSegue(withIdentifier: "musicViewController", sender: self)
+                let searchMusicViewController = self.storyboard?.instantiateViewController(withIdentifier: "searchMusicViewController") as! SearchMusicViewController
+                self.present(searchMusicViewController, animated:true, completion:nil)
       
             }
             else{
