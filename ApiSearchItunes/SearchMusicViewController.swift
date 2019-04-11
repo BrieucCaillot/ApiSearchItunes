@@ -22,11 +22,6 @@ class SearchMusicViewController: UIViewController, UITableViewDataSource,UITextF
         getAlbumsFromArtist(artist:"drake")
     }
     
-    
-    @IBAction func buttonSearch(_ sender: Any) {
-        getAlbumsFromArtist(artist: inputSearch.text!)
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return albumList.count
     }
